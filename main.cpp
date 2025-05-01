@@ -59,7 +59,7 @@ struct lista{
 		free(p);
 		return ref;
 		}
-		}
+		};
 		
 		int main(){
 		Lista* ref = criaLista();
