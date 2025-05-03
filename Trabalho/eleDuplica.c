@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int buscaBinaPrimeOcorrencia(int vetor[], int inicio, int fim, int chave) {
-    int resultado = -1;  // Corrigido: "resuldado" -> "resultado"
-
+    int resultado = -1; 
     while (inicio <= fim) {
         int meio = (inicio + fim) / 2;
 
         if (vetor[meio] == chave) {
             resultado = meio;
-            fim = meio - 1;  // Continua buscando à esquerda
-        }
+            fim = meio - 1;  
         else if (vetor[meio] > chave) {
             fim = meio - 1;
         }
@@ -18,7 +16,7 @@ int buscaBinaPrimeOcorrencia(int vetor[], int inicio, int fim, int chave) {
         }
     }
 
-    return resultado;  // Corrigido: movido para fora do while
+    return resultado;  
 }
 
 int main() {
