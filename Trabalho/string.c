@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-// Função para verificar se uma palavra está presente na string
+
 int buscarPalavra(char texto[], char palavra[]) {
     if (strstr(texto, palavra) != NULL) {
         return 1; // Encontrado
     }
+    
     return 0; // Não encontrado
 }
 
